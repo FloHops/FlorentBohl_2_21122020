@@ -1,0 +1,45 @@
+/*Police globale*/
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-Regular.ttf") format("ttf"),           
+ }
+
+body {
+    font-family: "Raleway", "Sans serif";
+    width: 1024px;
+    margin: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+        
+}
+.liens {
+      flex: 1 0 auto;
+      text-align: right;
+      
+}
+.lien1, .lien3{
+    text-decoration: none;
+    color: #0065fc
+}
+.lien2{
+    text-decoration: none;
+    color: black;
+}
+a{
+    margin-right: 30px;
+
+}
+nav a:hover{
+    color: #0065fc;
+    border-top: 1px solid #0065fc;
+    padding-top: 11px;
+}
+
+
+    
+}
+    
+       
+
