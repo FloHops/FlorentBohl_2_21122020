@@ -9,6 +9,7 @@ body {
     width: 1024px;
     margin: auto;
 }
+/*CSS Header*/
 .logo {
     display: flex;
     align-items: center;
@@ -36,10 +37,74 @@ nav a:hover{
     border-top: 1px solid #0065fc;
     padding-top: 11px;
 }
+/*Ajouter ici reponsive header*/
 
+/*Section 1 CSS*/
 
+.rechercheville {
+    
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;    
+}
+.ville {
+    border: none;
+    padding: 10px;
+}
+button{
+    
+    background-color: #0065fc;    
+    border-radius: 0px 10px 10px 0px; 
+    border-color: #0065fc;  
+    color: white;
+    padding: 10px 30px 10px 15px;
+    margin: auto;    
+}
+
+/*Les différents Filtres*/
+.filtres{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+.filtre {
+    border: 1px solid #F2F2F2;
+    padding-right: 20px;
+    border-radius: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-weight:900;
+}
+.filtre i {
+    color: #0065fc;
+    background-color: #deebff;
+    padding: 8px;
+    border-radius: 50px;
+    margin-right: 12px;
     
 }
+.filtre:hover{
+    background-color:rgb(236, 245, 255)
+}
+.filtretexte{
+    font-weight: 800;
+}
+.information i{
+    color: #0065fc;
+    border: solid #deebff;
+    padding: 8px;
+    border-radius: 100%;
+    margin-right: 12px;
+    margin-top: 25px;
+
+}
+]
+
+
+
     
+    
+}
        
 
