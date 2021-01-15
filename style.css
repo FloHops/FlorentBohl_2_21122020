@@ -43,13 +43,26 @@ nav a:hover{
 
 .rechercheville {
     
-    border-radius: 10px;
+    border-radius: 10px; 
+    display: flex;   
+}
+.rechercheville i{
     background-color: #F2F2F2;
-    border-color: #F2F2F2;    
+    display: inline-block;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
 }
 .ville {
-    border: none;
-    padding: 10px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 11px 0px;
+    padding-left: 5px;
+    
+   
 }
 button{
     
@@ -58,7 +71,7 @@ button{
     border-color: #0065fc;  
     color: white;
     padding: 10px 30px 10px 15px;
-    margin: auto;    
+       
 }
 
 /*Les différents Filtres*/
@@ -93,18 +106,72 @@ button{
 .information i{
     color: #0065fc;
     border: solid #deebff;
-    padding: 8px;
+    padding: 5px;
     border-radius: 100%;
     margin-right: 12px;
     margin-top: 25px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    font-size: x-small;
+}
+/*Section 2 Hébergements - Les plus populaires*/
+
+#Hébergements{
+    background-color: #F2F2F2;
+    padding: 20px;
+    margin-bottom: 0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.Leshebergements{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.hebergement img{
+    max-width: 150px;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ }
+.hebergement a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.prixhebergement{
+    font-weight: normal;
+    font-size: 13px;
+}
+i{
+    color: #0065fc;
+}
+figure{
+    background-color: white;
+    
+}
+
+
+
 
 }
-]
+}
+}
+}
+    
+
+}
+}
+
 
 
 
     
     
-}
+
        
 
