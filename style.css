@@ -6,7 +6,7 @@
 
 body {
     font-family: "Raleway", "Sans serif";
-    width: 1024px;
+    width: 1180px;
     margin: auto;
 }
 /*CSS Header*/
@@ -60,18 +60,14 @@ nav a:hover{
     border-left: 0px;
     border-right: 0px;
     padding: 11px 0px;
-    padding-left: 5px;
-    
-   
+    padding-left: 5px;  
 }
-button{
-    
+button{    
     background-color: #0065fc;    
     border-radius: 0px 10px 10px 0px; 
     border-color: #0065fc;  
     color: white;
-    padding: 10px 30px 10px 15px;
-       
+    padding: 10px 30px 10px 15px;      
 }
 
 /*Les différents Filtres*/
@@ -94,8 +90,7 @@ button{
     background-color: #deebff;
     padding: 8px;
     border-radius: 50px;
-    margin-right: 12px;
-    
+    margin-right: 12px;    
 }
 .filtre:hover{
     background-color:rgb(236, 245, 255)
@@ -115,28 +110,36 @@ button{
     text-align: center;
     font-size: x-small;
 }
-/*Section 2 Hébergements - Les plus populaires*/
+
+/*Section 2 Hébergements*/
 
 #Hébergements{
     background-color: #F2F2F2;
     padding: 20px;
-    margin-bottom: 0px;
+    margin-bottom: -15px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    margin-right: 415px;
 }
-
-.Leshebergements{
+.miseenpagehebergements {
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
-    
+    margin-right: 65px;
+    font-size: 14px; 
+    padding-bottom: 20px;
+}   
+.Leshebergementsetpopulaires{
+    display: flex;
+    justify-content: space-between;
 }
-
 .hebergement img{
-    max-width: 150px;
-    height: auto;
+    max-width: 165px;
+    height: 110px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin: 5px 5px 0px 5px;
+       
  }
 .hebergement a{
     text-decoration: none;
@@ -152,26 +155,78 @@ i{
 }
 figure{
     background-color: white;
+}
+.afficherplus{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    margin-top: 0px;
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.hebergement{
+    border-radius: 20px;
+    width: 175px;    
+    box-shadow: 1px 1px 12px gray;
+}
+.Hôteldelamer img{
+    width: 165px;
+}
+.HôtelchezAmina img{
+    width: 165px;  
+}
+figcaption{
+    line-height: 5px;
+    margin-left: 10px;
     
 }
+/*Les plus populaires*/
 
-
-
-
+.miseenpagepopulaires{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-top: -45px;     
 }
+.populaires h3{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
 }
-}
-}
-    
-
-}
+.populaires i{
+    color: black;
 }
 
-
-
-
-    
-    
-
-       
+.lespluspopulaires{
+    display: flex;
+    flex-direction: column;
+}
+.populaire a{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px gray;
+    width: 260px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0;
+}
+.populaire img{
+    width: 115px;
+    height: 112px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.populaire{
+    border-radius: 20px;    
+}
+.populaire figcaption{
+    line-height: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;    
+}
+ 
 
