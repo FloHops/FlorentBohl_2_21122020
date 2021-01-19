@@ -127,7 +127,7 @@ button{
     flex-wrap: wrap;
     margin-right: 65px;
     font-size: 14px; 
-    padding-bottom: 20px;
+    border-radius: 20px;
 }   
 .Leshebergementsetpopulaires{
     display: flex;
@@ -160,10 +160,8 @@ figure{
     font-weight: bold;
     font-size: 20px;
     background-color: #F2F2F2;
-    margin-top: 0px;
-    padding: 30px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    margin-top: 10px;
+    padding-left: 35px;
 }
 .hebergement{
     border-radius: 20px;
