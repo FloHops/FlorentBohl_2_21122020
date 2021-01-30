@@ -43,19 +43,18 @@ nav a{
     border-top: 2px solid #0065fc;
     padding-top: 35px;
 }
-/*Ajouter ici reponsive header*/
-
 /*Section 1 CSS*/
 
 .rechercheville {
     
     border-radius: 10px; 
     display: flex;
+    height: 45px;
 }
-.rechercheville i{
+.rechercheville i.fa-map-marker-alt {
     background-color: #F2F2F2;
     display: inline-block;
-    padding: 17px;
+    padding: 15px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 
@@ -65,16 +64,22 @@ nav a{
     border-bottom: 1px solid #F2F2F2;
     border-left: 0px;
     border-right: 0px;
-    padding: 11px 0px;
-    padding-left: 5px;  
+    padding: 11px 14px;
+    font-weight: bold;
+    
 }
-button{    
+    
+.rechercheville button{    
     background-color: #0065fc;    
     border-radius: 0px 10px 10px 0px; 
     border-color: #0065fc;  
     color: white;
     padding: 10px 30px 10px 15px;      
 }
+.rechercheville button i {
+    display: none;
+}
+
 
 /*Les différents Filtres*/
 .filtres{
@@ -94,10 +99,11 @@ button{
 .filtre i {
     color: #0065fc;
     background-color: #deebff;
-    padding: 8px;
+    padding: 13px;
     border-radius: 50px;
     margin-right: 12px;    
 }
+
 .filtre:hover{
     background-color:rgb(236, 245, 255)
 }
@@ -124,6 +130,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 #hebergements .hebergement-marseille,
@@ -170,8 +177,13 @@ button{
     font-weight:bold;
     font-size: 16px;
 }
-figcaption i{
+figcaption .fas{
     color: #0065fc;
+}
+figcaption .far{
+    color:#F2F2F2;
+    
+
 }
 .afficherplus{
     font-weight: bold;
@@ -232,7 +244,6 @@ figcaption i{
 
 }
 .figureactivites img{
-    height: 375px;
     width: 250px;
     object-fit: cover;
     border-top-left-radius: 10px;
@@ -279,8 +290,13 @@ footer{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
-nav ul{
+footer nav{
+    width: 30%;
+
+}
+footer nav ul{
     list-style: none;
     line-height: 25px;
     font-size: 13px;
@@ -290,17 +306,117 @@ nav ul{
     font-size: 15px;
     margin-bottom: 15px;
 }
-.elementgauche{
-    margin-left: -20px;
-}
-.elementcentre{
-    margin-left: 230px;
-}
-.elementdroite{
-    margin-left: 235px;
+@media only screen and (min-device-width: 1024px){
+    .figureactivites img{
+        height: 375px;
+    }
 }
 
+/**  Media query pour iphone **/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
+    body{
+        width: auto;
+
+    }
+    header{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    header .logo {
+        order: 1;
+    }
+
+    header .lien3 {
+        order: 2;
+    }
+
+    header nav.liens {
+        order: 3;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+    .lien1{
+        margin-top: 0;
+    }
+    .filtres {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filtretexte{
+        width: 100%;
+    }
+
+    #hebergements{
+        flex-direction: column;
+        
+    }
+
+    #hebergements .hebergement-marseille {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        order: 2;
+        background-color: white;
+
+    }
+    #hebergements .hebergement-populaire {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        order: 1;
+        
+    }
+    #hebergements .list a {
+        width: 100%;
+    }
+    section:first-child {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .rechercheville button i{
+        display: inline;
+    }
+    .rechercheville button span{
+        display: none;
+    }
+    .filtre{
+        margin-left: 0;
+    }
+    .lienactivites {
+        width: 90%;
+        margin: auto;
+    }
+    .lienactivites img {
+        width: 100%;
+    }
+    .deuxactivites{
+        width: 100%;
+    }
+    .figureactivites img{
+        height: 140px;
+    }
+    footer{
+        flex-direction: column;        
+    }
+    footer nav{
+        width: 100%;
+    }
+   footer nav ul {
+       padding-left:20px;
+   }
+        
+   
+
+
+
+
+}
 
 
 
