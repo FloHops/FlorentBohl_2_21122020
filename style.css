@@ -28,6 +28,10 @@ header {
     text-decoration: none;
     color: #0065fc;
     margin-top: 20px;
+    
+}
+.lien3 {
+    font-weight: bold;
 }
 .lien2{
     text-decoration: none;
@@ -74,7 +78,8 @@ nav a{
     border-radius: 0px 10px 10px 0px; 
     border-color: #0065fc;  
     color: white;
-    padding: 10px 30px 10px 15px;      
+    padding: 10px 30px 10px 15px;
+    font-size: 16px;      
 }
 .rechercheville button i {
     display: none;
@@ -325,10 +330,13 @@ footer nav ul{
     }
     header .logo {
         order: 1;
+        margin-left: 25px;
     }
 
     header .lien3 {
         order: 2;
+        margin-right: 17px;
+        
     }
 
     header nav.liens {
@@ -336,10 +344,13 @@ footer nav ul{
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-
-
+        justify-content: space-around;
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 15px;
+        margin-left: 20px;
+           
     }
+      
     .lien1{
         margin-top: 0;
     }
@@ -347,6 +358,8 @@ footer nav ul{
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
+        width: 320px;
+        height: 204px;
     }
     .filtretexte{
         width: 100%;
@@ -365,6 +378,10 @@ footer nav ul{
         background-color: white;
 
     }
+    #hebergements .hebergement img{
+        width: 328px;
+    }
+
     #hebergements .hebergement-populaire {
         display: flex;
         flex-direction: column;
@@ -385,12 +402,20 @@ footer nav ul{
     .rechercheville button span{
         display: none;
     }
+    .rechercheville button {
+        border-radius: 10px;
+        padding-right: 15px;
+    }
+    #Activites{
+        margin-left: 19px;
+    }
     .filtre{
-        margin-left: 0;
+        margin-left: 4px;
     }
     .lienactivites {
         width: 90%;
         margin: auto;
+        margin-bottom: 20px;
     }
     .lienactivites img {
         width: 100%;
