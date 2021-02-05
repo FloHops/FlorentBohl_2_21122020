@@ -291,7 +291,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-bottom: 40px;
+    
 }
 footer nav{
     width: 30%;
@@ -439,14 +439,70 @@ footer nav ul{
    footer nav ul {
        padding-left:20px;
    }
-  
- 
 }
-@media only screen and (min-width:1024){
+
+@media only screen and (min-width:1024px){
     .liens :hover{
         color: #0065fc;
         border-top: 2px solid #0065fc;
         padding-top: 35px;
+    }
 }
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    body{
+        width: auto;
+        margin: 20px;       
+    }
+    .filtres {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        height: 120px;
+    }
+    #hebergements{
+        flex-direction: column;
+    }
+    #hebergements .hebergement-populaire {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        order: 1;
+    }
+    #hebergements .hebergement-populaire img{
+        width: 260px;
+        height: 165px;
+
+    }
+    #hebergements .hebergement-marseille {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        order: 2;
+        background-color: white;
+    }
+    .figureactivites img{
+        width: 415px;
+        height: 339px;
+    }
+    .deuxactivites{
+        margin-bottom: 10px;
+    }
+    .lienactivites{
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
 }
 
