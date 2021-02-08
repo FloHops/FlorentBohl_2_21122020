@@ -314,7 +314,7 @@ footer nav ul{
 }
 
 /**  Media query pour iphone **/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 680px) {
 
     body{
         width: auto;
@@ -383,7 +383,7 @@ footer nav ul{
 
     }
     #hebergements .hebergement img{
-        width: 328px;
+        width: 100%;
     }
 
     #hebergements .hebergement-populaire {
